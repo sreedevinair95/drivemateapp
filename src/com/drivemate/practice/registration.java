@@ -10,6 +10,6 @@ public class registration {
         System.out.println("Age : ");
         int age = obj.nextInt();
 
-        System.out.println("Hi "+name+" !, You have successfully registered DriveMate !");
+        System.out.println("Hi "+name+" !, You have successfully registered in DriveMate !");
     }
 }
