@@ -3,13 +3,22 @@ import java.util.*;
 
 public class registration {
     public static void main(String[] args) {
+
         Scanner obj = new Scanner(System.in);
         System.out.println("Welcome to Driving School, Student registration");
-        System.out.println("Name : ");
-        String name = obj.nextLine();
-        System.out.println("Age : ");
-        int age = obj.nextInt();
+        
+       for(int i =1;i>0;i++) {
+           System.out.println("Name : ");
+           String name = obj.next();
 
-        System.out.println("Hi "+name+" !, You have successfully registered DriveMate !");
+           System.out.println("Age : ");
+           int age = obj.nextInt();
+
+           System.out.println("Hi " + name + " !, You have successfully registered in DriveMate !");
+       }
+
+
     }
 }
+
+
