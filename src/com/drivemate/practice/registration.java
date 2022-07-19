@@ -17,7 +17,11 @@ public class registration {
        }
 
 
+<<<<<<< HEAD
     }
+=======
+        System.out.println("Hi "+name+" !, You have successfully registered in DriveMate !");
+>>>>>>> 85304ec4dabc921781187c6d936bda2ef407eb4e
     }
 }
 
