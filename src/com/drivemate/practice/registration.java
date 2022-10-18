@@ -1,28 +1,43 @@
 package com.drivemate.practice;
 import java.util.*;
 
-public class registration {
+public class Registration {
     public static void main(String[] args) {
 
-        Scanner obj = new Scanner(System.in);
-        System.out.println("Welcome to Driving School, Student registration");
-        
-       for(int i =1;i>0;i++) {
-           System.out.println("Name : ");
-           String name = obj.next();
+        Scanner inputReader = new Scanner(System.in);
+        System.out.println("Welcome to Driving School !!");
 
-           System.out.println("Age : ");
-           int age = obj.nextInt();
-           System.out.println("Hi " + name + " !, You have successfully registered in DriveMate !");
-       }
+        int selectedFunction = readUserSelection(inputReader);
 
+        while (selectedFunction != 3) {
+            if(selectedFunction == 1) {
+                System.out.println("Name : ");
+                String name = inputReader.next();
 
-<<<<<<< HEAD
+                System.out.println("Age : ");
+                int age = inputReader.nextInt();
+                System.out.println("Hi " + name + " !, You have successfully registered in DriveMate !");
+            } else if (selectedFunction == 2) {
+
+            } else {
+                System.out.println("Sorry, invalid function");
+            }
+            selectedFunction = readUserSelection(inputReader);
+        }
     }
-=======
-        System.out.println("Hi "+name+" !, You have successfully registered in DriveMate !");
->>>>>>> 85304ec4dabc921781187c6d936bda2ef407eb4e
+
+    /**
+     * Presents a menu and reads an option from the user and returns it
+     * @param inputReader
+     * @return
+     */
+    private static int readUserSelection(Scanner inputReader) {
+        System.out.println("1: Student Registration");
+        System.out.println("2: Student Search");
+        System.out.println("3: Exit");
+
+        System.out.println("Please select the function : ");
+        int selectedFunction = inputReader.nextInt();
+        return selectedFunction;
     }
 }
-
-
