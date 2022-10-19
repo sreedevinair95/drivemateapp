@@ -1,15 +1,17 @@
 package com.drivemate.practice;
+import java.io.File;
 import java.util.*;
 
 public class Registration {
     public static void main(String[] args) {
 
         Scanner inputReader = new Scanner(System.in);
+
         System.out.println("Welcome to Driving School !!");
 
-        int selectedFunction = readUserSelection(inputReader);
-
-        while (selectedFunction != 3) {
+        // while (selectedFunction != 3) is same as  for(;selectedFunction != 3;)
+        while (true) {
+            int selectedFunction = readUserSelection(inputReader);
             if(selectedFunction == 1) {
                 System.out.println("Name : ");
                 String name = inputReader.next();
@@ -19,11 +21,16 @@ public class Registration {
                 System.out.println("Hi " + name + " !, You have successfully registered in DriveMate !");
             } else if (selectedFunction == 2) {
 
+            } else if (selectedFunction == 3) {
+                System.exit(0);
             } else {
                 System.out.println("Sorry, invalid function");
             }
-            selectedFunction = readUserSelection(inputReader);
         }
+    }
+
+    public static void compress(String filePath, String destinationFolder){
+
     }
 
     /**
