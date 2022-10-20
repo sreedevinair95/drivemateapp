@@ -8,11 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration
 public class MyApplication {
-
-    @RequestMapping("/")
-    String home() {
-        return "Hello Rimmy!";
-    }
+//    @RequestMapping("/")
+//    String home() {
+//        return "Hello Rimmy!";
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);
