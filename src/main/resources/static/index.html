@@ -5,11 +5,36 @@
         <title>Drive mate</title>
     </head>
     <body>
-        <p>Welcome to Drivemate</p>
-        <form>
-        Name : <input type="text"/>
-        Age : <input type="number"/>
+        <p>Welcome to Drivemate !!</p>
+        <p>Register a new Student</p>
+        <form action="/register">
+            <div>
+                Name : <input type="text" name="studentName"/>
+            </div>
+            <div>
+                Age : <input type="number" name="studentAge"/>
+            </div>
         <input type="submit" />
         </form>
+
+        <form action="/list">
+            <p>Registered Students</p>
+            <div>
+            Enter Date : <input type="date" name="date">
+            </div>
+
+            <div>
+                <input type="Submit">
+            </div>
+        </form>
+
+        <form action="/search">
+            <p>Search</p>
+            <div>
+                Enter name to search : <input type="text" name="studentSearch">
+            </div>
+            <input type="submit" />
+        </form>
+
     </body>
 </html>
